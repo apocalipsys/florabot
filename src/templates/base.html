@@ -55,7 +55,7 @@
             {% endif %}
             {% if current_user.is_authenticated and session['camara'] == True %}
           <a class="dropdown-item" href="{{ url_for('core.camara', cam=False) }}">Apagar camara</a>
-          <a class="dropdown-item" href="http://sistemadomotica.dvrdns.org:8081" target="_blank">Ver camara</a>
+          <a class="dropdown-item" href="localhost:xxxx" target="_blank">Ver camara</a>
             {% endif %}
             {% if current_user.is_authenticated and session['ecosystem'] != True and session['trabajando'] == True %}
           <a class="dropdown-item" href="{{ url_for('core.ecosystem', eco=True) }}">Encender Ecosystem</a>
