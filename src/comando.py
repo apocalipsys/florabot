@@ -7,11 +7,10 @@ class ParamikoComando():
     #        data = json.load(file)
     #        HOST = data['hostname']
     #except:
-    #    print('capo')
-    #    HOST = '192.168.0.100'
-    HOST = '192.168.0.102'
-    USERNAME = 'pi'
-    PASSWORD = '1qaz2wsx3EDC4RFV.'
+    #    HOST = ''
+    HOST = ''
+    USERNAME = ''
+    PASSWORD = ''
     def __init__(self):
         self.client = paramiko.SSHClient()
 

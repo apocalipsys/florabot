@@ -2,57 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2ca3cf5-638d-4b45-b172-fa796b74ec82" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/versions/03c321f18c52_estado_luna.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/4ec12bc020c6_ecdb2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/4f450104fb4f_moon_rise_set.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/66422326e0ca_hemisferio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/8b7488a05e8f_ecdb.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/ab02f1e54e57_tipo_cultivo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/b81f232120c1_moon_rise_set_visibilidad.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/pruebas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/pruebas2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/scraping.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/agua.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/camara.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/contrasena.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/ecosystem.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/florabot-real-destripado.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/fonts/programar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/logs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/luna.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/servicio-tecnico.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/streaming.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/termometro-agua.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/descarga.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/timelaps.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/uploads/2019-05-08-150816.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/uploads/Captura_de_pantalla_de_2019-04-09_18-16-20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/views.bak" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/views.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/fondo.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/fondo2.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/fondo3.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/fondo4.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/primero.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/primero2.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/programar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/programar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/videoplayback.webm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/automatico.bak" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/automatico.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/automatico.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/automatico.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/borrar_actualizar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/borrar_actualizar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/indoor.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/indoor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/luna.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/luna.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/mensajes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/mensajes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/nombreconf.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/nombreconf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/comando.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/comando.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/conexion.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/conexion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorators.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,11 +19,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.env.example">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -78,7 +26,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="160">
               <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -97,7 +45,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -105,6 +53,63 @@
                 <caret line="24" selection-start-line="24" selection-end-line="24" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/comando.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2180">
+              <caret line="109" column="28" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/decorators.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/core/conexion.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -162,12 +167,8 @@
         <option value="$PROJECT_DIR$/wsgi.py" />
         <option value="$PROJECT_DIR$/.env.example" />
         <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/src/core/conexion.py" />
         <option value="$PROJECT_DIR$/src/users/views.py" />
-        <option value="$PROJECT_DIR$/src/decorators.py" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/src/__init__.py" />
-        <option value="$PROJECT_DIR$/src/comando.py" />
         <option value="$PROJECT_DIR$/src/templates/login.html" />
         <option value="$PROJECT_DIR$/src/templates/automatico.html" />
         <option value="$PROJECT_DIR$/src/templates/borrar_actualizar.html" />
@@ -187,10 +188,14 @@
         <option value="$PROJECT_DIR$/src/templates/luna.html" />
         <option value="$PROJECT_DIR$/src/core/views.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/comando.py" />
+        <option value="$PROJECT_DIR$/src/decorators.py" />
+        <option value="$PROJECT_DIR$/src/__init__.py" />
+        <option value="$PROJECT_DIR$/src/core/conexion.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="631" />
     <option name="y" value="27" />
     <option name="width" value="950" />
@@ -209,6 +214,23 @@
             <path>
               <item name="raspberryremote" type="b2602c69:ProjectViewProjectNode" />
               <item name="raspberryremote" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="raspberryremote" type="b2602c69:ProjectViewProjectNode" />
+              <item name="raspberryremote" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="raspberryremote" type="b2602c69:ProjectViewProjectNode" />
+              <item name="raspberryremote" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="raspberryremote" type="b2602c69:ProjectViewProjectNode" />
+              <item name="raspberryremote" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -404,9 +426,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="631" y="27" width="950" height="789" extended-state="0" />
+    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49253732" visible="true" weight="0.36825055" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49253732" visible="true" weight="0.17985232" />
       <window_info id="Structure" order="1" sideWeight="0.5074627" side_tool="true" weight="0.2378692" />
       <window_info id="Favorites" order="2" sideWeight="0.5065789" side_tool="true" weight="0.23206751" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -418,7 +441,7 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.50213677" side_tool="true" weight="0.27567568" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.503692" side_tool="true" weight="0.34054053" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49894515" weight="0.32864866" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49630803" visible="true" weight="0.6798179" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49630803" visible="true" weight="0.14702703" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32756758" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -481,16 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="16" column="79" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/views.bak2">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -535,16 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1126">
           <caret line="468" column="4" selection-start-line="468" selection-start-column="4" selection-end-line="468" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/comando.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="31" column="62" lean-forward="true" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -659,16 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/decorators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/scraping.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -681,23 +674,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/pruebas.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/conexion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="109" column="28" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/mensajes.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -755,7 +731,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="160">
           <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
@@ -776,6 +752,53 @@
             <caret line="24" selection-start-line="24" selection-end-line="24" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/comando.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2180">
+          <caret line="109" column="28" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/conexion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
         </state>
       </provider>
     </entry>

@@ -19,7 +19,7 @@ def requires_admin(f: Callable) -> Callable:
         return f(*args,**kwargs)
     return decorated_function
 
-api_pass = 'perromonstruo'
+api_pass = ''
 def protected(f):
     @functools.wraps(f)
     def decorated_function(*args, **kwargs):
