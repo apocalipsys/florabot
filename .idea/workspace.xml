@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d2ca3cf5-638d-4b45-b172-fa796b74ec82" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/migrations/versions/03c321f18c52_estado_luna.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/4ec12bc020c6_ecdb2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/4f450104fb4f_moon_rise_set.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/66422326e0ca_hemisferio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/8b7488a05e8f_ecdb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/ab02f1e54e57_tipo_cultivo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/b81f232120c1_moon_rise_set_visibilidad.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/pruebas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/pruebas2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/scraping.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/agua.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/camara.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/contrasena.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/ecosystem.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/florabot-real-destripado.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/fonts/programar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/logs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/luna.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/servicio-tecnico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/streaming.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/termometro-agua.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/descarga.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/timelaps.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/uploads/2019-05-08-150816.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/uploads/Captura_de_pantalla_de_2019-04-09_18-16-20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/views.bak" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/views.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fondo.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fondo2.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fondo3.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fondo4.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/primero.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/primero2.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/programar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/programar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/videoplayback.webm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/automatico.bak" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/automatico.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/automatico.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/automatico.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/borrar_actualizar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/borrar_actualizar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/indoor.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/indoor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/luna.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/luna.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/mensajes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/mensajes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/nombreconf.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/nombreconf.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="raspberryremote" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env.example">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pipfile">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pipfile.lock">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="480">
+                <caret line="24" selection-start-line="24" selection-end-line="24" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>print</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="apocalipsys" />
+        <option value="Martin Vargas" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/decorators.py" />
+        <option value="$PROJECT_DIR$/src/templates/userslist.html" />
+        <option value="$PROJECT_DIR$/src/templates/register.html" />
+        <option value="$PROJECT_DIR$/src/users/forms.py" />
+        <option value="$PROJECT_DIR$/src/templates/subir_archivo.html" />
+        <option value="$PROJECT_DIR$/src/core/pruebaparamikoupload.txt" />
+        <option value="$PROJECT_DIR$/promedio.py" />
+        <option value="$PROJECT_DIR$/src/templates/firefox.html" />
+        <option value="$PROJECT_DIR$/src/templates/terminal.html" />
+        <option value="$PROJECT_DIR$/src/templates/stdout.html" />
+        <option value="$PROJECT_DIR$/src/templates/comando.html" />
+        <option value="$PROJECT_DIR$/src/statics/style.css" />
+        <option value="$PROJECT_DIR$/src/templates/historial.html" />
+        <option value="$PROJECT_DIR$/src/templates/cambiar_password.html" />
+        <option value="$PROJECT_DIR$/src/core/funccc.py" />
+        <option value="$PROJECT_DIR$/src/core/autothread.py" />
+        <option value="$PROJECT_DIR$/src/core/threads.py" />
+        <option value="$PROJECT_DIR$/automatic.py" />
+        <option value="$PROJECT_DIR$/auto_test.py" />
+        <option value="$PROJECT_DIR$/src/core/multi.py" />
+        <option value="$PROJECT_DIR$/src/static/sensor.js" />
+        <option value="$PROJECT_DIR$/tacho/threads.py" />
+        <option value="$PROJECT_DIR$/tacho/pruebita.py" />
+        <option value="$PROJECT_DIR$/wsgi.py" />
+        <option value="$PROJECT_DIR$/.env.example" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/src/core/conexion.py" />
+        <option value="$PROJECT_DIR$/src/users/views.py" />
+        <option value="$PROJECT_DIR$/src/decorators.py" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/src/__init__.py" />
+        <option value="$PROJECT_DIR$/src/comando.py" />
+        <option value="$PROJECT_DIR$/src/templates/login.html" />
+        <option value="$PROJECT_DIR$/src/templates/automatico.html" />
+        <option value="$PROJECT_DIR$/src/templates/borrar_actualizar.html" />
+        <option value="$PROJECT_DIR$/src/core/forms.py" />
+        <option value="$PROJECT_DIR$/src/templates/descarga.html" />
+        <option value="$PROJECT_DIR$/src/templates/timelaps.html" />
+        <option value="$PROJECT_DIR$/src/templates/indoor.html" />
+        <option value="$PROJECT_DIR$/src/templates/home.html" />
+        <option value="$PROJECT_DIR$/src/static/style.css" />
+        <option value="$PROJECT_DIR$/src/templates/mensajes.html" />
+        <option value="$PROJECT_DIR$/src/templates/base.html" />
+        <option value="$PROJECT_DIR$/src/templates/nombreconf.html" />
+        <option value="$PROJECT_DIR$/src/core/parse.py" />
+        <option value="$PROJECT_DIR$/src/core/scraping.py" />
+        <option value="$PROJECT_DIR$/src/core/pruebas.py" />
+        <option value="$PROJECT_DIR$/src/models.py" />
+        <option value="$PROJECT_DIR$/src/templates/luna.html" />
+        <option value="$PROJECT_DIR$/src/core/views.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="631" />
+    <option name="y" value="27" />
+    <option name="width" value="950" />
+    <option name="height" value="789" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="raspberryremote" type="b2602c69:ProjectViewProjectNode" />
+              <item name="raspberryremote" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/core" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tacho" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/core/tacho" />
+      <recent name="$PROJECT_DIR$/src/static" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/core" />
+      <recent name="$PROJECT_DIR$/src/static" />
+      <recent name="$PROJECT_DIR$/src/templates" />
+      <recent name="$PROJECT_DIR$/src/static/fonts" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.app">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="raspberryremote" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="auto_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="raspberryremote" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tacho/auto_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pruebas" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="raspberryremote" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/core" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/core/pruebas.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pruebita" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="raspberryremote" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tacho" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tacho/pruebita.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scraping" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="raspberryremote" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/core" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/core/scraping.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.app" />
+        <item itemvalue="Python.pruebas" />
+        <item itemvalue="Python.scraping" />
+        <item itemvalue="Python.pruebita" />
+        <item itemvalue="Python.auto_test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d2ca3cf5-638d-4b45-b172-fa796b74ec82" name="Default Changelist" comment="" />
+      <created>1565490273372</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565490273372</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Para potenciales contratistas">
+      <created>1576275560391</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576275560391</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Para potenciales contratistas">
+      <created>1576275984340</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576275984340</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="631" y="27" width="950" height="789" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49253732" visible="true" weight="0.36825055" />
+      <window_info id="Structure" order="1" sideWeight="0.5074627" side_tool="true" weight="0.2378692" />
+      <window_info id="Favorites" order="2" sideWeight="0.5065789" side_tool="true" weight="0.23206751" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49786323" weight="0.3589189" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.50213677" side_tool="true" weight="0.27567568" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.503692" side_tool="true" weight="0.34054053" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49894515" weight="0.32864866" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49630803" visible="true" weight="0.6798179" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32756758" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49253732" visible="true" weight="0.2378692" />
+      <window_info id="Structure" order="1" sideWeight="0.5074627" side_tool="true" weight="0.2378692" />
+      <window_info id="Favorites" order="2" sideWeight="0.5065789" side_tool="true" weight="0.23206751" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.4978903" weight="0.27567568" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32864866" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32972974" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5021097" side_tool="true" weight="0.34270272" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4978903" visible="true" weight="0.3416216" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32756758" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Para potenciales contratistas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Para potenciales contratistas" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/static/rapido2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/programar.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/automatico.bak">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/users/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="16" column="79" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/views.bak2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/views_antes_ec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models.bak">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/historial.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/termometro-agua.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/base.bak">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/uploads/cafeina.mp4" />
+    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/raspberryremote-oRs8KHvq/lib/python3.7/site-packages/paramiko/channel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="378" column="8" selection-start-line="378" selection-start-column="8" selection-end-line="378" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/raspberryremote-oRs8KHvq/lib/python3.7/site-packages/flask/helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1126">
+          <caret line="468" column="4" selection-start-line="468" selection-start-column="4" selection-end-line="468" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/comando.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="31" column="62" lean-forward="true" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/borrar_actualizar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="44" column="14" lean-forward="true" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/timelaps.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1600">
+          <caret line="86" column="53" selection-start-line="86" selection-start-column="53" selection-end-line="86" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="142" column="16" selection-start-line="142" selection-start-column="16" selection-end-line="142" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#h1#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/indoor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="91" column="35" selection-start-line="91" selection-start-column="35" selection-end-line="91" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/descarga.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/parse.py" />
+    <entry file="file://$PROJECT_DIR$/src/templates/automatico.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2900">
+          <caret line="145" column="38" selection-start-line="145" selection-start-column="38" selection-end-line="145" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/views.bak">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15048" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3827">
+          <caret line="757" column="38" selection-start-line="757" selection-start-column="38" selection-end-line="757" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/luna.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2060">
+          <caret line="103" column="4" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="4" />
+          <folding>
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#3;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#4;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#6;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="132" column="30" selection-start-line="132" selection-start-column="30" selection-end-line="132" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/scraping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/pruebas.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/conexion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="109" column="28" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/mensajes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="200" column="26" selection-start-line="200" selection-start-column="17" selection-end-line="200" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/nombreconf.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="122" column="22" selection-start-line="122" selection-start-column="22" selection-end-line="122" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/logo_florabot2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/logo_florabot.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/uploads/2019-05-08-150816.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/core/uploads/Captura_de_pantalla_de_2019-04-09_18-16-20.png" />
+    <entry file="file://$PROJECT_DIR$/src/core/uploads/2019-05-08-150805.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/uploads/2019-05-08-151228.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.example">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pipfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pipfile.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="480">
+            <caret line="24" selection-start-line="24" selection-end-line="24" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

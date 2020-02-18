@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Esa configuracion ya existe</h1>
+        <div>
+            <a class="btn btn-primary" href="{{url_for('core.update',nombre_conf=nombre_conf,tipo_cultivo=tipo_cultivo,luz=luz,temperatura_min=temperatura_min,temperatura_max=temperatura_max,riego=riego,cantidad_riego=cantidad_riego,humedad_min=humedad_min,humedad_max=humedad_max,ventilador=ventilador,cantidad_ventilador=cantidad_ventilador,ph_min=ph_min,ph_max=ph_max,humedad_suelo=humedad_suelo,ec_min=ec_min,ec_max=ec_max)}}">Actualizar</a>
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#del_modal">Borrar</button>
+        </div>
+
+
+
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="del_modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Borrar?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Estas seguro de que queres borrar el post?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+
+          <form action="{{ url_for('core.delete',nombre_conf=nombre_conf) }}" method="POST">
+
+              <input class="btn btn-danger" type="submit" value="Delete">
+          </form>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% endblock %}

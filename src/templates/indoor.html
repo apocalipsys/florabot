@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RaspControl|INDOOR</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<form method="POST">
+<div class="card bg-dark mx-auto text-center" style="max-width: 18rem;">
+
+    {{ form.hidden_tag() }}
+
+    {% if ban_luz == False %}
+
+    {{ form.luz(class="botonesON") }}<br><br>
+
+    {% else %}
+
+    {{ form.a_luz(class="botonesOFF") }}<br><br>
+
+    {% endif %}
+    {% if ban_ec_down == False %}
+
+    {{ form.ec_down(class="botonesON") }}<br><br>
+
+    {% else %}
+
+    {{ form.a_ec_down(class="botonesOFF") }}<br><br>
+
+    {% endif %}
+    {% if ban_ec_up == False %}
+
+    {{ form.ec_up(class="botonesON") }}<br><br>
+
+    {% else %}
+
+    {{ form.a_ec_up(class="botonesOFF") }}<br><br>
+
+    {% endif %}
+    {% if ban_hum == False %}
+
+    {{ form.humedad(class="botonesON") }}<br><br>
+
+    {% else %}
+
+    {{ form.a_humedad(class="botonesOFF") }}<br><br>
+
+    {% endif %}
+    {% if ban_rie == False %}
+
+    {{ form.riego(class="botonesON") }}<br><br>
+
+    {% else %}
+
+    {{ form.a_riego(class="botonesOFF") }}<br><br>
+
+    {% endif %}
+    {% if ban_int_ext == False %}
+
+    {{ form.intractor_extractor(class="botonesON") }}<br><br>
+
+    {% else %}
+
+    {{ form.a_intractor_extractor(class="botonesOFF") }}<br><br>
+
+    {% endif %}
+    {% if ban_ph_up == False %}
+
+    {{ form.ph_up(class="botonesON") }}<br><br>
+
+    {% else %}
+
+    {{ form.a_ph_up(class="botonesOFF") }}<br><br>
+
+    {% endif %}
+    {% if ban_ph_down == False %}
+
+    {{ form.ph_down(class="botonesON") }}<br><br>
+
+    {% else %}
+
+    {{ form.a_ph_down(class="botonesOFF") }}<br><br>
+
+    {% endif %}
+    {{ form.salir(class="botonesOFF") }}
+
+
+</div>
+
+</form>
+
+</body>
+</html>

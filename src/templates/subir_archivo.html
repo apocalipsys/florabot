@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %} Subir Archivo {% endblock title %}
+
+{% block content %}
+
+
+   <form method="POST" enctype="multipart/form-data">
+      {{ form.hidden_tag() }}
+      {{ form.upload_file.label() }}
+      {{ form.upload_file() }}
+      {{ form.submit(class="btn btn-primary") }}
+    </form>
+
+{% endblock content %}

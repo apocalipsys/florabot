@@ -1,0 +1,14 @@
+{% extends 'comando.html' %}
+
+{% block stdout %}
+
+<h1>-------------------------------</h1>
+{% for line in stdout %}
+
+
+<p>{{ line.strip('\n') }}</p>
+
+{% endfor %}
+<h1>-------------------------------</h1>
+
+{% endblock stdout %}

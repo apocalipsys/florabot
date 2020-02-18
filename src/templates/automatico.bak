@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+{% block title %} AUTOMATICO {% endblock title %}
+
+{% block content %}
+
+<form class="range-field" method="POST">
+
+<div class="card bg-dark mx-auto text-left text-white col-md-4">
+    {{ form.hidden_tag() }}
+<div class="card-footer border-warning">
+    {{ form.luz.label() }}
+    {{ form.luz(type="range", id="horasluz", value="1", min="1", max="24", oninput="outputIDluz.value = horasluz.value") }}
+    <output name="salida" id="outputIDluz"></output>
+</div>
+<div class="card-footer border-warning">
+    {{ form.humedad_min.label() }}
+    {{ form.humedad_min(type="range", id="hum_min", value="1", min="1", max="100", oninput="outputIDhum_min.value = hum_min.value") }}
+    <output name="salida" id="outputIDhum_min"></output>
+</div>
+<div class="card-footer border-warning">
+    {{ form.humedad_max.label() }}
+    {{ form.humedad_max(type="range", id="hum_max", value="1", min="1", max="100", oninput="outputIDhum_max.value = hum_max.value") }}
+    <output name="salida" id="outputIDhum_max"></output>
+</div>
+<div class="card-footer border-warning">
+    {{ form.temperatura_min.label() }}
+    {{ form.temperatura_min(type="range", id="temp_min", value="1", min="1", max="100", oninput="outputIDtemp_min.value = temp_min.value") }}
+    <output name="salida" id="outputIDtemp_min"></output>
+</div>
+<div class="card-footer border-warning">
+    {{ form.temperatura_max.label() }}
+    {{ form.temperatura_max(type="range", id="temp_max", value="1", min="1", max="100", oninput="outputIDtemp_max.value = temp_max.value") }}
+    <output name="salida" id="outputIDtemp_max"></output>
+</div>
+<div class="card-footer border-warning">
+    {{ form.ph_min.label() }}
+    {{ form.ph_min(type="range", step="0.1", id="ph_min", value="0.1", min="0.1", max="14", oninput="outputIDph_min.value = ph_min.value") }}
+    <output name="salida" id="outputIDph_min"></output>
+</div>
+<div class="card-footer border-warning">
+    {{ form.ph_max.label() }}
+    {{ form.ph_max(type="range", step="0.1", id="ph_max", value="0.1", min="0.1", max="14", oninput="outputIDph_max.value = ph_max.value") }}
+    <output name="salida" id="outputIDph_max"></output>
+</div>
+<div class="card-footer border-warning">
+    {{ form.ec_min.label() }}
+    {{ form.ec_min(type="range", step="0.1", id="ec_min", value="0.1", min="0.1", max="1000", oninput="outputIDec_min.value = ec_min.value") }}
+    <output name="salida" id="outputIDec_min"></output>
+</div>
+<div class="card-footer border-warning">
+    {{ form.ec_max.label() }}
+    {{ form.ec_max(type="range", step="0.1", id="ec_max", value="0.1", min="0.1", max="1000", oninput="outputIDec_max.value = ec_max.value") }}
+    <output name="salida" id="outputIDec_max"></output>
+</div>
+<div class="card-footer border-warning" id="divsuelo1">
+    {{ form.hum_suelo.label() }}
+    {{ form.hum_suelo }}
+</div>
+<div class="card-footer border-warning" id="divriego1">
+    {{ form.riego_por_tiempo.label() }}
+    {{ form.riego_por_tiempo }}
+</div>
+<div class="card-footer border-warning" id="divsuelo2">
+    {{ form.humedad_suelo.label() }}
+    {{ form.humedad_suelo(type="range", id="humedad_suelo", value="1", min="0", max="100", oninput="outputIDhumedad_suelo.value = humedad_suelo.value") }}
+    <output name="salida" id="outputIDhumedad_suelo"></output>
+</div>
+<div class="card-footer border-warning" id="divriego2">
+    {{ form.riego.label() }}
+    {{ form.riego(type="range", id="riego", value="1", min="1", max="24", oninput="outputIDriego.value = riego.value") }}
+    <output name="salida" id="outputIDriego"></output>
+</div>
+<div class="card-footer border-warning" id="divriego3">
+    {{ form.cantidad_riego.label() }}
+    {{ form.cantidad_riego(type="range", id="cant_riego", value="1", min="1", max="60", oninput="outputIDcant_riego.value = cant_riego.value") }}
+    <output name="salida" id="outputIDcant_riego"></output>
+</div>
+<div class="card-footer border-warning">
+    {{ form.ventilador.label() }}
+    {{ form.ventilador(type="range", id="ventilador", value="1", min="1", max="24", oninput="outputIDventilador.value = ventilador.value") }}
+    <output name="salida" id="outputIDventilador"></output>
+</div>
+<div class="card-footer border-warning">
+    {{ form.cantidad_ventilador.label() }}
+    {{ form.cantidad_ventilador(type="range", id="cantidad_ventilador", value="1", min="1", max="60", oninput="outputIDcantidad_ventilador.value = cantidad_ventilador.value") }}
+    <output name="salida" id="outputIDcantidad_ventilador"></output>
+</div>
+<div class="card-text border-warning">
+    {{ form.nombre_conf.label() }}
+    {{ form.nombre_conf(class="col-md-8 mb-3") }}
+    {% if form.nombre_conf.errors %}
+    {% for error in form.nombre_conf.errors %}
+
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+          <button type="button" class="fade close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+            {{ error }}
+        </div>
+
+
+    {% endfor %}
+    {% endif %}
+<div class="card-footer border-warning">
+    {{ form.submit(class="btn btn-success mb-2 t-2") }}
+</div>
+</div>
+</div>
+
+</form>
+   <script>
+        jQuery(document).ready(function() {
+        $("#divsuelo2").hide();
+        $("#divriego2").hide();
+        $("#divriego3").hide();
+        $("#hum_suelo").change(function() {
+            if (this.checked) {
+                $("#divsuelo2").show();
+                $("#divriego1").hide();
+                $("#divriego2").hide();
+                $("#divriego3").hide();
+            } else {
+                $("#divsuelo2").hide();
+                $("#divriego1").show();
+                }
+            });
+        $("#riego_por_tiempo").change(function() {
+            if (this.checked) {
+                $("#divriego2").show();
+                $("#divriego3").show();
+                $("#divsuelo1").hide();
+                $("#divsuelo2").hide();
+            } else {
+                $("#divriego2").hide();
+                $("#divriego3").hide();
+                $("#divsuelo1").show();
+                }
+            });
+        });
+    </script>
+{% endblock content %}
+
+

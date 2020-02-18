@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% block title %} Mensaje al Administrador {% endblock title %}
+
+{% block content %}
+
+<form class="range-field" method="POST">
+<div class="card bg-dark mx-auto text-left text-white col-md-8">
+Fecha: {{ fecha }} - Hora: {{ hora }}<br>
+Numero de serie: {{ numero_serie_rpi }}<br>
+Usuario: {{ session['username'] }}<br>
+</div>
+<div class="card bg-dark mx-auto text-left text-white col-md-8">
+    {{ form.hidden_tag() }}
+<div class="card-text border-warning">
+    {{ form.asunto.label() }}
+    {{ form.asunto(class="col-md-8 mb-10") }}
+    {% if form.asunto.errors %}
+    {% for error in form.asunto.errors %}
+
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+          <button type="button" class="fade close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+            {{ error }}
+        </div>
+
+
+    {% endfor %}
+    {% endif %}
+<div class="card-text border-warning">
+    {{ form.mensaje.label() }}
+    {{ form.mensaje(class="col-md-8 mb-10", cols="35",rows="20") }}
+    {% if form.mensaje.errors %}
+    {% for error in form.mensaje.errors %}
+
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+          <button type="button" class="fade close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+            {{ error }}
+        </div>
+
+
+    {% endfor %}
+    {% endif %}
+<div class="card-footer border-warning">
+    {{ form.submit(class="btn btn-success mb-2 t-2") }}
+</div>
+</div>
+</div>
+</div>
+</form>
+{% for msj in listado %}
+{% if msj.respuesta == None %}
+<div class="jumbotronchat text-white" style="background-color:rgba(68, 33, 77, 0.7); border:3px solid Grey;">
+  <p style="background-color:rgba(68, 33, 77, 0.5);">Tu mensaje es el siguiente {{ msj.usuario }}:
+      <br>
+  Asunto: {{ msj.asunto }} <br>
+  Mensaje: {{ msj.mensaje }}
+  </p>
+  <hr class="my-10">
+
+  <p class="lead" style="background-color:rgba(201, 24, 48, 1);">sin respuesta:
+      <br>
+
+   </p>
+    <span style="background-color:rgba(68, 33, 77, 0.5);">Fecha: {{ msj.fecha }} - Hora: {{ msj.hora }}</span>
+</div>
+  <hr class="my-10">
+    {% else %}
+<div class="jumbotronchat text-white" style="background-color:rgba(68, 33, 77, 0.7); border:3px solid Grey;">
+  <p style="background-color:rgba(68, 33, 77, 0.5);">Tu mensaje es el siguiente {{ msj.usuario }}:
+      <br>
+  Asunto: {{ msj.asunto }} <br>
+  Mensaje: {{ msj.mensaje }}
+  </p>
+  <hr class="my-10">
+
+  <p class="lead" style="background-color:rgba(0, 173, 38, 0.5);">La respuesta del Administrador:
+      <br>
+    {{ msj.respuesta }}
+
+   </p>
+    <span style="background-color:rgba(68, 33, 77, 0.5);">Fecha: {{ msj.fecha }} - Hora: {{ msj.hora }}</span>
+</div>
+  <hr class="my-10">
+    {% endif %}
+{% endfor %}
+
+
+{% endblock content %}

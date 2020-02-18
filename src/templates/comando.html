@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %} comando {% endblock title %}
+
+{% block content %}
+
+
+   <form method="POST">
+      {{ form.hidden_tag() }}
+       <p>Comando especifico</p>
+      {{ form.comando.label() }}
+      {{ form.comando() }}
+      {{ form.submit(class="btn btn-primary") }}
+
+          <a href="{{ url_for('core.parar') }}" class="btn btn-danger">Parar</a>
+
+
+   <a href="{{ url_for('core.terminal') }}" class="btn btn-danger">Abrir terminal(en desarrollo)</a>
+    </form>
+{% block stdout %}
+{% endblock stdout %}
+
+{% endblock content %}

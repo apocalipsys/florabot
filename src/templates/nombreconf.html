@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block title %} Lista de Configuraciones {% endblock title %}
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h2>Lista de Setups</h2>
+    <p class="lead">Seleccione la configuracion que desea abrir</p>
+  </div>
+
+{% for nc in nconf %}
+<div class="list-group">
+  <a href="{{ url_for('core.abrir', nombre=nc.nombre_conf) }}" class="list-group-item list-group-item-action">
+      <h5 class="mb-1">{{ nc.nombre_conf }}</h5>
+    <div class="d-flex w-100 justify-content-between">
+      <small><br>
+      Ultima ejecucion: {{ nc.inicio }}<br>
+      Tipo de Cultivo: {{ nc.tipo_cultivo }}<br>
+      Horas de encendido de la LUZ: {{ nc.luz }}<br>
+      Porcentaje de humedad del suelo {{ nc.humedad_suelo }}%<br>
+      Cada cuantas horas regar {{ nc.riego }}<br>
+      Cantidad de segundos de riego {{ nc.cantidad_riego }}<br>
+      Porcentaje minimo de humedad {{ nc.humedad_min }}%<br>
+      Porcentaje maximo de humedad {{ nc.humedad_max }}%<br>
+      Temperatura minima {{ nc.temperatura_min }}<br>
+      Temperatura maxima {{ nc.temperatura_max }}<br>
+      Nivel de PH minimo {{ nc.ph_min }}<br>
+      Nivel de PH maximo {{ nc.ph_max }}<br>
+      Tds minimo {{ nc.ec_min }}ppm<br>
+      Tds maximo {{ nc.ec_max }}ppm<br>
+      Cada cuantas horas ventilar {{ nc.ventilador }}<br>
+      Cantidad de minutos de ventilacion {{ nc.cantidad_ventilador }}
+      </small>
+
+    </div>
+
+    <p class="mb-1">Click en la configuracion para cargar e iniciar</p>
+    <small>Click en boton 'BORRAR' para borrar</small>
+  </a>
+
+</div>
+
+
+
+<div>
+            <button type="button" class="btn btn-danger btn-lg btn-block" data-toggle="modal" data-target="#del_modal">Borrar</button>
+        </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="del_modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Borrar?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Estas seguro de que queres borrar el post?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+
+          <form action="{{ url_for('core.delete',nombre_conf=nc.nombre_conf) }}" method="POST">
+
+              <input class="btn btn-danger" type="submit" value="Delete">
+          </form>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<br>
+{% endfor %}
+
+</div>
+{% endblock content %}
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %} Lista de Usuarios {% endblock title %}
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Borrar usuarios</h1>
+    <p class="lead">Seleccione el usuario que desea borrar</p>
+  </div>
+
+{% for user in users %}
+<div class="list-group">
+  <a href="{{ url_for('users.delete', userid=user.id) }}" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">{{ user.username }}</h5>
+      <small>3 days ago</small>
+    </div>
+    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+    <small>Donec id elit non mi porta.</small>
+  </a>
+</div>
+{% endfor %}
+
+</div>
+{% endblock content %}

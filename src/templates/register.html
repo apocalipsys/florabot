@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %} Registrar usuario {% endblock title %}
+
+{% block content %}
+
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <form method="post" action="{{ url_for('users.register') }}" name="RegisterForm">
+  {{ form.hidden_tag() }}
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Registrar Usuario</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="form-group">
+        <div class="md-form mb-5">
+          <i class="fas fa-user prefix grey-text"></i>
+          {{ form.username(type="text", id="orangeForm-name", class="form-control validate") }}
+          {{ form.username.label(for="orangeForm-name") }}
+        </div>
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          {{ form.password(type="password", id="orangeForm-pass", class="form-control validate") }}
+          {{ form.password.label(for="orangeForm-pass") }}
+        </div>
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          {{ form.password_confirm(type="password", id="defaultForm-pass", class="form-control validate") }}
+          {{ form.password_confirm.label(for="orangeForm-pass") }}
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+
+          {{ form.submit(class="btn btn-deep-orange") }}
+
+      </div>
+    </div>
+    </div>
+  </div>
+  </form>
+</div>
+
+<div class="text-center">
+  <h1><a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalRegisterForm">REGISTRAR USUARIO</a></h1>
+</div>
+
+{% endblock content %}

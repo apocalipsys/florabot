@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RaspControl|{% block title %} {% endblock title %}</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, men in messages %}
+
+        <div class="alert alert-{{category}} alert-dismissible fade show" role="alert">
+          <button type="button" class="fade close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+            {{ men }}
+        </div>
+        {% endfor %}
+    {% endif %}
+  {% endwith %}
+
+<nav class="navbar sticky-top navbar-expand-lg" style="background-color:#008000">
+  {% if current_user.is_authenticated %}
+
+  <a class="navbar-brand" href="#">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {% block username %}
+
+    {{ session['username'] }}
+
+    {% endblock username %}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="{{ url_for('users.cambiarpass', username=session['username']) }}">Cambiar password</a>
+          <a class="dropdown-item" href="{{ url_for('users.historial', username=session['username']) }}">Ver logs</a>
+          <a class="dropdown-item" href="{{ url_for('core.luna') }}">Recomendaciones segun la luna</a>
+            {% if current_user.is_authenticated and session['username'] != config.ADMIN %}
+          <a class="dropdown-item" href="{{ url_for('core.mensajeadm') }}">Dejar un mensaje al administrador</a>
+            {% endif %}
+            {% if current_user.is_authenticated and session['camara'] != True %}
+          <a class="dropdown-item" href="{{ url_for('core.camara', cam=True) }}">Encender camara</a>
+            {% endif %}
+            {% if current_user.is_authenticated and session['camara'] == True %}
+          <a class="dropdown-item" href="{{ url_for('core.camara', cam=False) }}">Apagar camara</a>
+          <a class="dropdown-item" href="http://192.168.0.100:8081" target="_blank">Ver camara</a>
+            {% endif %}
+            {% if current_user.is_authenticated and session['ecosystem'] != True %}
+          <a class="dropdown-item" href="{{ url_for('core.ecosystem', eco=True) }}">{% if session['trabajando'] == True %}Encender Ecosystem{% endif %}</a>
+            {% endif %}
+            {% if current_user.is_authenticated and session['ecosystem'] == True %}
+          <a class="dropdown-item" href="{{ url_for('core.ecosystem', eco=False) }}">{% if session['trabajando'] == True %}Apagar Ecosystem{% endif %}</a>
+            {% endif %}
+
+        </div>
+
+</a>
+  {% endif %}
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        {% if current_user.is_authenticated %}
+        <a class="nav-link" href="{{ url_for('core.home',user=session['username']) }}">Home <span class="sr-only">(current)</span></a>
+      </li>
+        {% else %}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('users.login') }}">Login</a>
+      </li>
+        {% endif %}
+        {% if current_user.is_authenticated and user == config.ADMIN  %}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('users.register') }}">Registrar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('users.list') }}">Borrar usuario</a>
+      </li>
+        {% endif %}
+        {% if current_user.is_authenticated %}
+        <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('users.logout') }}">Logout</a>
+      </li>
+        <li class="nav-item">
+            {% block info %}
+            {% endblock info %}
+        </li>
+        {% endif %}
+    </ul>
+      {% if current_user.is_authenticated %}
+      <ul class="nav-item-center">
+          {% block sensor %}
+          {% endblock sensor %}
+      </ul>
+      <ul class="nav-item-right">
+
+        {% block trabajando %}
+        {% endblock trabajando %}
+
+      </ul>
+      {% endif %}
+  </div>
+
+</nav>
+{% block content %}
+
+{% endblock content %}
+{% block terminal %}
+{% endblock terminal %}
+
+</body>
+</html>

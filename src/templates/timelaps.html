@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %} Time Laps {% endblock title %}
+
+{% block content %}
+
+<form method="POST">
+<div>
+
+  <br>
+
+    {{ form.hidden_tag() }}
+    {{ form2.hidden_tag() }}
+    {% if session['timelaps'] == False %}
+
+    {{ form2.encender(class="btn btn-outline-dark btn-block") }}<br><br>
+
+    {% else %}
+    {{ form.nombre_time_laps() }}
+    {{ form.submit(class="btn btn-outline-danger btn-block") }}<br><br>
+
+    {% endif %}
+
+
+</div>
+
+</form>
+
+
+
+
+</div>
+
+{% endblock content %}
