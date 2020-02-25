@@ -1,3 +1,4 @@
+![image](static)
 # FloraBot
 ## Sistema de cultivo automatizado y remoto
 
@@ -23,8 +24,6 @@ segun sea el modo de cultivo que se elija (por tierra o hidroponico)
 --
 En el arduino estan conectados algunos sensores tales como medidor de ph, intensidad de luz, electroconductividad, 
 humedad, temperatura, temperatura del agua, humedad del sustrato (tierra) y una pequenia pantalla de lcd.
-
-![image](static)
 
 **Caracteristicas del code**
 * Python 3
