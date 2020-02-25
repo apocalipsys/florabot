@@ -24,10 +24,6 @@ segun sea el modo de cultivo que se elija (por tierra o hidroponico)
 En el arduino estan conectados algunos sensores tales como medidor de ph, intensidad de luz, electroconductividad, 
 humedad, temperatura, temperatura del agua, humedad del sustrato (tierra) y una pequenia pantalla de lcd.
 
-*Algo mas*
---
-El sistema se complementa con leds senialadores de informacion, una camara, sistema de proteccion electronica, bateria de 12v-7,5Ah
-para su continuo funcionamiento y una fuente conmutada con protecciones hacia los circuitos que componen el hardware.
 ![image](static)
 
 **Caracteristicas del code**
